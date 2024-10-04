@@ -1,0 +1,101 @@
+Below are the scheam, table and coulm information, axonai_demo is the schema.
+
+   - axonai_demo
+      - sales_pipeline_entries
+         - sales_pipeline_entry_id, BIGINT
+         - company_id, INTEGER
+         - bus_unit_name, VARCHAR(50)
+         - opportunity_id, BIGINT
+         - opportunity_type, VARCHAR(50)
+         - customer_id, BIGINT
+         - sales_agent_id, BIGINT
+         - employee_id, BIGINT
+         - product_type, VARCHAR(50)
+         - product_name, VARCHAR(255)
+         - policy_no, VARCHAR(255)
+         - policy_amount, DECIMAL(18, 2)
+         - target_premium_amount, DECIMAL(18, 2)
+         - estimated_revenue_for_sales_goal, DECIMAL(18, 2)
+         - stage, VARCHAR(50)
+         - outcome, VARCHAR(255)
+         - next_steps, TEXT
+         - notes, TEXT
+         - created_dt, DATETIME
+         - last_modified_dt, DATETIME
+         - uw__status, VARCHAR(255)
+         - uw__decision, VARCHAR(255)
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+      - sales_txns
+         - sales_txn_id, BIGINT
+         - company_id, BIGINT
+         - policy_no, VARCHAR(50)
+         - opportunity_id, BIGINT
+         - txn_dt, DATETIME
+         - premium_amount, DECIMAL(10, 2)
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+      - employees
+         - employee_id, BIGINT
+         - company_id, BIGINT
+         - manager_id, BIGINT
+         - team_id, BIGINT
+         - department_name, VARCHAR(255)
+         - employee_name, VARCHAR(100)
+         - role_name, VARCHAR(50)
+         - email, VARCHAR(50)
+         - is_active, TINYINT
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+         - password, VARCHAR(255)
+      - sales_agents
+         - sales_agent_id, BIGINT
+         - company_id, BIGINT
+         - distributor_id, BIGINT
+         - agent_name, VARCHAR(50)
+         - license_no, VARCHAR(50)
+         - agent_type, VARCHAR(50)
+         - territory, VARCHAR(30)
+         - email, VARCHAR(50)
+         - address, VARCHAR(255)
+         - phone, VARCHAR(50)
+         - ms_teams, VARCHAR(50)
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+      - sales_relationships
+         - sales_relationship_id, BIGINT
+         - company_id, BIGINT
+         - employee_id, BIGINT
+         - sales_agent_id, BIGINT
+         - distributor_id, BIGINT
+         - relationship_type, VARCHAR(50)
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+      - interactions
+         - interaction_id, BIGINT
+         - company_id, BIGINT
+         - employee_id, BIGINT
+         - sales_agent_id, BIGINT
+         - created_dt, DATETIME
+         - interaction_type, VARCHAR(50)
+         - description, VARCHAR(255)
+         - follow_up, VARCHAR(255)
+         - status, VARCHAR(50)
+         - metadata, JSON
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+      - activities
+         - activity_id, BIGINT
+         - company_id, BIGINT
+         - employee_id, BIGINT
+         - sales_agent_id, BIGINT
+         - customer_id, BIGINT
+         - opportunity_id, BIGINT
+         - activity_type, VARCHAR(50)
+         - created_dt, DATETIME
+         - last_modified_dt, DATETIME
+         - status, VARCHAR(255)
+         - metadata, JSON
+         - created_at, TIMESTAMP
+         - last_modified_at, TIMESTAMP
+

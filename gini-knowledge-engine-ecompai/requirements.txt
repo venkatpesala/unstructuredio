@@ -1,0 +1,8 @@
+streamlit==1.34.0
+fastapi
+boto3
+openai
+python-multipart
+pandas
+mysql.connector
+uvicorn
